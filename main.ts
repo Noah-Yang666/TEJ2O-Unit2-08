@@ -54,8 +54,14 @@ input.onButtonPressed(Button.A, function () {
     pins.digitalWritePin(DigitalPin.P16, 1)
     basic.pause(1000)
 
-    // turning off everything
+    // turning off everything(no color)
     pins.digitalWritePin(DigitalPin.P14, 0)
     pins.digitalWritePin(DigitalPin.P15, 0)
     pins.digitalWritePin(DigitalPin.P16, 0)
+})
+
+// resetting everything
+input.onButtonPressed(Button.B, function () {
+    basic.clearScreen()
+    basic.showIcon(IconNames.Happy)
 })
