@@ -59,9 +59,3 @@ input.onButtonPressed(Button.A, function () {
     pins.digitalWritePin(DigitalPin.P15, 0)
     pins.digitalWritePin(DigitalPin.P16, 0)
 })
-
-// resetting everything
-input.onButtonPressed(Button.B, function () {
-    basic.clearScreen()
-    basic.showIcon(IconNames.Happy)
-})
