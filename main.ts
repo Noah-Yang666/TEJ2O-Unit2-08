@@ -11,6 +11,7 @@ basic.showIcon(IconNames.Happy)
 
 // shows all colors on A button
 input.onButtonPressed(Button.A, function () {
+    basic.showIcon(IconNames.Yes)
     // turns on red pin
     pins.digitalWritePin(DigitalPin.P14, 1)
     basic.showString('red')
